@@ -106,7 +106,7 @@
 		D8418C9618C968400099A530 /* OLImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLImage.h; sourceTree = "<group>"; };
 		D8418C9718C968400099A530 /* OLImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLImage.m; sourceTree = "<group>"; };
 		D8418C9918C96A190099A530 /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = demo.gif; path = /Users/bradbain/dev/pasteify/Pasteify/Images/demo.gif; sourceTree = "<absolute>"; };
-		D8418C9C18C978D80099A530 /* PasteifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasteifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8418C9C18C978D80099A530 /* PasteifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = PasteifyTests.xctest; path = "/Users/bradbain/dev/pasteify/build/Debug-iphoneos/PasteifyTests.xctest"; sourceTree = "<absolute>"; };
 		D8960BA718B913F600496CC0 /* Pasteify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pasteify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -243,7 +243,6 @@
 				D82DEA1D18B168070080D4BD /* README.md */,
 				D82E466E18483CB80093AA75 /* Frameworks */,
 				D8960BA718B913F600496CC0 /* Pasteify.app */,
-				D8418C9C18C978D80099A530 /* PasteifyTests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
