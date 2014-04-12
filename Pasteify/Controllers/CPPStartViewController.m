@@ -35,7 +35,7 @@
     [super viewDidLoad];
 }
 
-- (void)viewDidAppear:(BOOL)animated {
+- (void)viewWillAppear:(BOOL)animated {
     if(!demoGif) {
         NSString *imageFile = [[NSBundle mainBundle] pathForResource:@"demo" ofType:@"gif"];
         demoGif = [OLImage imageWithContentsOfFile:imageFile];
