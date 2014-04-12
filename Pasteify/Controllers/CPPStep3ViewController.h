@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "ManiputableImageView.h"
+#import "MPInterstitialAdController.h"
 
-@interface CPPStep3ViewController : UIViewController <ManiputableImageDelegate>
+@interface CPPStep3ViewController : UIViewController <ManiputableImageDelegate, MPInterstitialAdControllerDelegate>
 - (void)imageCropper:(ManiputableImageView *)cropper didFinishCombiningImages:(UIImage *)finalImage;
 @end

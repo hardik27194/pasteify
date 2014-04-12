@@ -7,9 +7,10 @@
 //
 
 #import "CPPStep3ViewController.h"
-#import "ManiputableImageView.h"
 #import "CPPCurrentProjectService.h"
 #import "CPPProject.h"
+#import "ManiputableImageView.h"
+#import "MPInterstitialAdController.h"
 
 @interface CPPStep3ViewController ()
 @property (weak, nonatomic) IBOutlet ManiputableImageView *manipulatorView;
@@ -17,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
 @property (weak, nonatomic) IBOutlet UIView *instructionPopover;
 @property (weak, nonatomic) IBOutlet UIButton *tutorialOkButton;
+
+@property (weak, nonatomic) MPInterstitialAdController *interstitial;
 
 - (IBAction)finishButtonTapped:(id)sender;
 - (IBAction)tutorialOkButtonPressed:(id)sender;
@@ -45,6 +48,13 @@
     [manipulatorView setup];
     manipulatorView.delegate = self;
     manipulatorView.image = [[CPPCurrentProjectService project] foreground];
+    
+    // Load the interstitial
+#if DEBUG
+    [self.interstitial setTesting:true];
+#endif
+    self.interstitial.delegate = self;
+    [self.interstitial loadAd];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -89,6 +99,16 @@
     CPPProject *project = [CPPCurrentProjectService project];
     project.combinedImage = finalImage;
     
+    if(self.interstitial.ready) {
+        [self.interstitial showFromViewController:self];
+    } else {
+        [self performSegueWithIdentifier:@"ToProjectViewSegue" sender:self];
+    }
+}
+
+#pragma mark - MoPub Delegate Methods
+-(void) interstitialDidDisappear:(MPInterstitialAdController *)interstitial {
+    // When the interstitial is closed, continue on
     [self performSegueWithIdentifier:@"ToProjectViewSegue" sender:self];
 }
 

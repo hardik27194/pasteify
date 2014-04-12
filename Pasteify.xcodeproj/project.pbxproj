@@ -139,10 +139,10 @@
 		D87A5CA818F9D2CD00CAC1B5 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87A5CA718F9D2CD00CAC1B5 /* iAd.framework */; };
 		D87A5CAA18F9D2D400CAC1B5 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87A5CA918F9D2D400CAC1B5 /* MessageUI.framework */; };
 		D87A5CAC18F9D2DB00CAC1B5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87A5CAB18F9D2DB00CAC1B5 /* MobileCoreServices.framework */; };
-		D87A5CAE18F9D2F500CAC1B5 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87A5CAD18F9D2F500CAC1B5 /* PassKit.framework */; };
 		D87A5CB018F9D2FA00CAC1B5 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87A5CAF18F9D2FA00CAC1B5 /* Social.framework */; };
 		D87A5CB218F9D2FF00CAC1B5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87A5CB118F9D2FF00CAC1B5 /* StoreKit.framework */; };
 		D87A5CB418F9D30600CAC1B5 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87A5CB318F9D30600CAC1B5 /* AdSupport.framework */; };
+		D87A5CB718F9F63A00CAC1B5 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87A5CB618F9F63A00CAC1B5 /* PassKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -208,7 +208,6 @@
 		D8418C9618C968400099A530 /* OLImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLImage.h; sourceTree = "<group>"; };
 		D8418C9718C968400099A530 /* OLImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLImage.m; sourceTree = "<group>"; };
 		D8418C9918C96A190099A530 /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = demo.gif; path = /Users/bradbain/dev/pasteify/Pasteify/Images/demo.gif; sourceTree = "<absolute>"; };
-		D8418C9C18C978D80099A530 /* PasteifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = PasteifyTests.xctest; path = "/Users/bradbain/dev/pasteify/build/Debug-iphoneos/PasteifyTests.xctest"; sourceTree = "<absolute>"; };
 		D87A5B7518F9D1DB00CAC1B5 /* MPGoogleAdMobBannerCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPGoogleAdMobBannerCustomEvent.h; sourceTree = "<group>"; };
 		D87A5B7618F9D1DB00CAC1B5 /* MPGoogleAdMobBannerCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPGoogleAdMobBannerCustomEvent.m; sourceTree = "<group>"; };
 		D87A5B7718F9D1DB00CAC1B5 /* MPGoogleAdMobInterstitialCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPGoogleAdMobInterstitialCustomEvent.h; sourceTree = "<group>"; };
@@ -403,10 +402,12 @@
 		D87A5CA718F9D2CD00CAC1B5 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		D87A5CA918F9D2D400CAC1B5 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		D87A5CAB18F9D2DB00CAC1B5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		D87A5CAD18F9D2F500CAC1B5 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		D87A5CAF18F9D2FA00CAC1B5 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		D87A5CB118F9D2FF00CAC1B5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D87A5CB318F9D30600CAC1B5 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		D87A5CB518F9F63800CAC1B5 /* Pasteify.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Pasteify.entitlements; sourceTree = "<group>"; };
+		D87A5CB618F9F63A00CAC1B5 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		D87A5CB818F9F64E00CAC1B5 /* PasteifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasteifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8960BA718B913F600496CC0 /* Pasteify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pasteify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -415,17 +416,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D87A5CA218F9D2B200CAC1B5 /* SystemConfiguration.framework in Frameworks */,
 				D87A5CB418F9D30600CAC1B5 /* AdSupport.framework in Frameworks */,
 				D87A5CB218F9D2FF00CAC1B5 /* StoreKit.framework in Frameworks */,
 				D87A5CB018F9D2FA00CAC1B5 /* Social.framework in Frameworks */,
-				D87A5CAE18F9D2F500CAC1B5 /* PassKit.framework in Frameworks */,
 				D87A5CAC18F9D2DB00CAC1B5 /* MobileCoreServices.framework in Frameworks */,
 				D87A5CAA18F9D2D400CAC1B5 /* MessageUI.framework in Frameworks */,
 				D87A5CA818F9D2CD00CAC1B5 /* iAd.framework in Frameworks */,
 				D87A5CA618F9D2C700CAC1B5 /* AVFoundation.framework in Frameworks */,
 				D87A5CA418F9D2C200CAC1B5 /* AudioToolbox.framework in Frameworks */,
 				D82E467418483CB80093AA75 /* UIKit.framework in Frameworks */,
-				D87A5CA218F9D2B200CAC1B5 /* SystemConfiguration.framework in Frameworks */,
 				D87A5CA018F9D2A800CAC1B5 /* QuartzCore.framework in Frameworks */,
 				D87A5C9E18F9D2A100CAC1B5 /* MediaPlayer.framework in Frameworks */,
 				D87A5C9B18F9D29100CAC1B5 /* EventKit.framework in Frameworks */,
@@ -434,6 +434,7 @@
 				D87A5C9618F9D28200CAC1B5 /* CoreLocation.framework in Frameworks */,
 				D82E467218483CB80093AA75 /* CoreGraphics.framework in Frameworks */,
 				D8418C8D18C57B1F0099A530 /* ImageIO.framework in Frameworks */,
+				D87A5CB718F9F63A00CAC1B5 /* PassKit.framework in Frameworks */,
 				D87A5C4718F9D1DC00CAC1B5 /* libMMSDK_5.1.1.a in Frameworks */,
 				D87A5C4A18F9D1DC00CAC1B5 /* SpeechKit.framework in Frameworks */,
 				D82E467018483CB80093AA75 /* Foundation.framework in Frameworks */,
@@ -457,6 +458,7 @@
 		D82DE9EB18B168070080D4BD /* Pasteify */ = {
 			isa = PBXGroup;
 			children = (
+				D87A5CB518F9F63800CAC1B5 /* Pasteify.entitlements */,
 				D87A5B7218F9D1DB00CAC1B5 /* MoPubSDK */,
 				D82DE9EC18B168070080D4BD /* Categories */,
 				D82DE9F318B168070080D4BD /* Controllers */,
@@ -563,16 +565,17 @@
 				D82DEA1D18B168070080D4BD /* README.md */,
 				D82E466E18483CB80093AA75 /* Frameworks */,
 				D8960BA718B913F600496CC0 /* Pasteify.app */,
+				D87A5CB818F9F64E00CAC1B5 /* PasteifyTests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
 		D82E466E18483CB80093AA75 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D87A5CB618F9F63A00CAC1B5 /* PassKit.framework */,
 				D87A5CB318F9D30600CAC1B5 /* AdSupport.framework */,
 				D87A5CB118F9D2FF00CAC1B5 /* StoreKit.framework */,
 				D87A5CAF18F9D2FA00CAC1B5 /* Social.framework */,
-				D87A5CAD18F9D2F500CAC1B5 /* PassKit.framework */,
 				D87A5CAB18F9D2DB00CAC1B5 /* MobileCoreServices.framework */,
 				D87A5CA918F9D2D400CAC1B5 /* MessageUI.framework */,
 				D87A5CA718F9D2CD00CAC1B5 /* iAd.framework */,
@@ -994,7 +997,7 @@
 			);
 			name = PasteifyTests;
 			productName = ClipprTests;
-			productReference = D8418C9C18C978D80099A530 /* PasteifyTests.xctest */;
+			productReference = D87A5CB818F9F64E00CAC1B5 /* PasteifyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -1009,6 +1012,11 @@
 				TargetAttributes = {
 					D82E466B18483CB80093AA75 = {
 						DevelopmentTeam = AURKQ53F73;
+						SystemCapabilities = {
+							com.apple.Passbook = {
+								enabled = 1;
+							};
+						};
 					};
 					D82E468618483CB80093AA75 = {
 						TestTargetID = D82E466B18483CB80093AA75;
@@ -1209,7 +1217,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = (
+					armv7s,
+					armv7,
+				);
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1233,6 +1244,7 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				"GCC_WARN_64_TO_32_BIT_CONVERSION[arch=*64]" = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -1248,7 +1260,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = (
+					armv7s,
+					armv7,
+				);
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1266,6 +1281,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				"GCC_WARN_64_TO_32_BIT_CONVERSION[arch=*64]" = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -1283,6 +1299,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pasteify/MoPubSDK/AdNetworkSupport/Millennial/SDK/SpeechKit",
@@ -1296,6 +1313,7 @@
 					"$(PROJECT_DIR)/Pasteify/MoPubSDK/AdNetworkSupport/Millennial/SDK",
 				);
 				PRODUCT_NAME = Pasteify;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1307,6 +1325,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pasteify/MoPubSDK/AdNetworkSupport/Millennial/SDK/SpeechKit",
@@ -1320,6 +1339,7 @@
 					"$(PROJECT_DIR)/Pasteify/MoPubSDK/AdNetworkSupport/Millennial/SDK",
 				);
 				PRODUCT_NAME = Pasteify;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
