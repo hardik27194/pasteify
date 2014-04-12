@@ -403,7 +403,7 @@
 		D87A5CAF18F9D2FA00CAC1B5 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		D87A5CB318F9D30600CAC1B5 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		D87A5CB518F9F63800CAC1B5 /* Pasteify.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Pasteify.entitlements; sourceTree = "<group>"; };
-		D87A5CB818F9F64E00CAC1B5 /* PasteifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = PasteifyTests.xctest; path = "/Users/bradbain/dev/pasteify/build/Debug-iphoneos/PasteifyTests.xctest"; sourceTree = "<absolute>"; };
+		D87A5CB918F9FF2E00CAC1B5 /* PasteifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = PasteifyTests.xctest; path = "/Users/bradbain/dev/pasteify/build/Debug-iphoneos/PasteifyTests.xctest"; sourceTree = "<absolute>"; };
 		D8960BA718B913F600496CC0 /* Pasteify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pasteify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -988,7 +988,7 @@
 			);
 			name = PasteifyTests;
 			productName = ClipprTests;
-			productReference = D87A5CB818F9F64E00CAC1B5 /* PasteifyTests.xctest */;
+			productReference = D87A5CB918F9FF2E00CAC1B5 /* PasteifyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
