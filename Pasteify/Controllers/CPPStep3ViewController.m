@@ -53,9 +53,6 @@
     self.interstitial = [MPInterstitialAdController
                          interstitialAdControllerForAdUnitId:@"058d92d58fec4bf7a1785d97ba8d3328"];
 
-#if DEBUG
-    [self.interstitial setTesting:true];
-#endif
     self.interstitial.delegate = self;
     [self.interstitial loadAd];
 }
