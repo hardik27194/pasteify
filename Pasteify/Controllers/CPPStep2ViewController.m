@@ -10,16 +10,18 @@
 
 #import "CPPProject.h"
 #import "CPPCurrentProjectService.h"
+#import "CPPTipView.h"
 
 @interface CPPStep2ViewController()
+{
+    CPPTipView *popover;
+}
+
 @property (weak, nonatomic) IBOutlet UIToolbar *optionsBar;
-@property (weak, nonatomic) IBOutlet UIView *instructionPopover;
-@property (weak, nonatomic) IBOutlet UIButton *tutorialOkButton;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *resetBarButtonItem;
 @property (weak, nonatomic) IBOutlet JBCroppableImageView *foregroundImageView;
 
 - (IBAction)resetButtonPressed:(UIBarButtonItem *)sender;
-- (IBAction)tutorialOkButtonPressed:(id)sender;
 - (IBAction)addDotButtonPressed:(UIBarButtonItem *)sender;
 - (IBAction)doubleTapGestureRecognized:(UITapGestureRecognizer *)sender;
 @end
@@ -31,22 +33,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // Initialize the popover
+    popover = [[CPPTipView alloc] initInFrame:self.view.frame];
+    popover.text = @"Tap and hold to select a foreground";
+    [self.view addSubview:popover];
 }
 
 -(void)viewWillAppear:(BOOL)animated {
     // Draw the foreground
     CPPProject *project = [CPPCurrentProjectService project];
     self.foregroundImageView.image = project.foreground;
-    
-    // Ensure the tutorial is only displayed if necessary
-    self.instructionPopover.hidden = YES;
-    self.tutorialOkButton.hidden = YES;
-    if(!project.foreground) {
-        // Round the corners of the tutorial
-        self.instructionPopover.layer.cornerRadius = 5;
-        self.instructionPopover.layer.masksToBounds = YES;
-        self.instructionPopover.hidden = NO;
-    }
     
     // Disable swipe back gesture - http://stackoverflow.com/questions/17209468/how-to-disable-back-swipe-gesture-in-uinavigationcontroller-on-ios-7
     if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
@@ -88,11 +85,6 @@
         [self.foregroundImageView removePoint];
 }
 
-- (IBAction)tutorialOkButtonPressed:(id)sender {
-    // Hide the tutorial so everyone can get on with their life
-    self.instructionPopover.hidden = YES;
-}
-
 - (IBAction)addDotButtonPressed:(UIBarButtonItem *)sender {
     [self.foregroundImageView addPoint];
     [self.resetBarButtonItem setTitle:@"Remove Dot"];
@@ -116,10 +108,8 @@
     [self.foregroundImageView setNeedsDisplay];
     
     // Update the tutorial and display the ok button
-    UILabel *helpText = (UILabel *)[self.instructionPopover.subviews objectAtIndex:0];
-    [helpText setNumberOfLines:5];
-    [helpText setText:@"Surround what you want to keep. Double tap when you're done."];
-    self.tutorialOkButton.hidden = NO;
+    [popover setText:@"Surround what you want to keep. Double tap when you're done." andNumberOfLines:5];
+    popover.isButton = YES;
     
 }
 

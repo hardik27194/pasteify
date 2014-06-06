@@ -7,11 +7,12 @@
 //
 
 #import "CPPStep1ViewController.h"
+#import "CPPTipView.h"
 
-@interface CPPStep1ViewController ()
+@interface CPPStep1ViewController () {
+    CPPTipView *popover;
+}
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
-@property (weak, nonatomic) IBOutlet UIView *instructionPopover;
-
 - (IBAction)gestureRecognizerLongPress:(UILongPressGestureRecognizer *)sender;
 @end
 
@@ -40,20 +41,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    popover = [[CPPTipView alloc] initInFrame:self.view.frame];
+    popover.text = @"Tap and hold to select a background";
+    [self.view addSubview:popover];
 }
 
 -(void) viewWillAppear:(BOOL)animated {
     CPPProject *project = [CPPCurrentProjectService project];
     self.backgroundImageView.image = project.background;
     
-    // Ensure the tutorial is only displayed if necessary
-    self.instructionPopover.hidden = YES;
-    if(!self.backgroundImageView.image) {
-    // Round the corners of the tutorial
-        self.instructionPopover.layer.cornerRadius = 5;
-        self.instructionPopover.layer.masksToBounds = YES;
-        self.instructionPopover.hidden = NO;
-    }
 }
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -84,6 +80,9 @@
     project.background = [info objectForKey:UIImagePickerControllerOriginalImage];
     
     [self dismissViewControllerAnimated:YES completion:nil];
+    
+    // Hide the popover
+    [popover close];
     
     // Display the background image
     self.backgroundImageView.image = project.background;

@@ -9,20 +9,20 @@
 #import "CPPStep3ViewController.h"
 #import "CPPCurrentProjectService.h"
 #import "CPPProject.h"
+#import "CPPTipView.h"
 #import "ManiputableImageView.h"
 #import "MPInterstitialAdController.h"
 
 @interface CPPStep3ViewController ()
+{
+    CPPTipView *popover;
+}
 @property (weak, nonatomic) IBOutlet ManiputableImageView *manipulatorView;
-
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
-@property (weak, nonatomic) IBOutlet UIView *instructionPopover;
-@property (weak, nonatomic) IBOutlet UIButton *tutorialOkButton;
 
 @property (weak, nonatomic) MPInterstitialAdController *interstitial;
 
 - (IBAction)finishButtonTapped:(id)sender;
-- (IBAction)tutorialOkButtonPressed:(id)sender;
 @end
 
 @implementation CPPStep3ViewController
@@ -55,6 +55,12 @@
 
     self.interstitial.delegate = self;
     [self.interstitial loadAd];
+    
+    // Initialize a popover
+    popover = [[CPPTipView alloc] initInFrame:self.view.frame];
+    [popover setText:@"Finally, drag, pinch, and rotate to position the photo!" andNumberOfLines:3];
+    popover.isButton = YES;
+    [self.view addSubview:popover];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -62,17 +68,6 @@
     
     // Draw the background
     self.backgroundImageView.image = project.background;
-    
-    // Ensure the tutorial is only displayed if necessary
-    self.instructionPopover.hidden = YES;
-    self.tutorialOkButton.hidden = YES;
-    if(![CPPCurrentProjectService project].combinedImage) {
-        // Round the corners of the tutorial
-        self.instructionPopover.layer.cornerRadius = 5;
-        self.instructionPopover.layer.masksToBounds = YES;
-        self.instructionPopover.hidden = NO;
-        self.tutorialOkButton.hidden = NO;
-    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -87,10 +82,6 @@
 -(IBAction)finishButtonTapped:(id)sender {
     CPPProject *project = [CPPCurrentProjectService project];
     [manipulatorView combineWithImage:project.background fromView:self.backgroundImageView];
-}
-
-- (IBAction)tutorialOkButtonPressed:(id)sender {
-    self.instructionPopover.hidden = YES;
 }
 
 #pragma  mark - ImageCropperDelegate Methods

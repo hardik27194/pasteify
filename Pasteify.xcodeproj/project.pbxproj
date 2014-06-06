@@ -41,6 +41,7 @@
 		D8418C9518C9682C0099A530 /* OLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8418C9418C9682C0099A530 /* OLImageView.m */; };
 		D8418C9818C968400099A530 /* OLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D8418C9718C968400099A530 /* OLImage.m */; };
 		D8418C9A18C96A190099A530 /* demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = D8418C9918C96A190099A530 /* demo.gif */; };
+		D84C3E691910804400750D94 /* CPPTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = D84C3E681910804400750D94 /* CPPTipView.m */; };
 		D87A5C3F18F9D1DB00CAC1B5 /* MPGoogleAdMobBannerCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = D87A5B7618F9D1DB00CAC1B5 /* MPGoogleAdMobBannerCustomEvent.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D87A5C4018F9D1DB00CAC1B5 /* MPGoogleAdMobInterstitialCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = D87A5B7818F9D1DB00CAC1B5 /* MPGoogleAdMobInterstitialCustomEvent.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D87A5C4118F9D1DB00CAC1B5 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D87A5B8318F9D1DB00CAC1B5 /* libGoogleAdMobAds.a */; };
@@ -206,6 +207,8 @@
 		D8418C9618C968400099A530 /* OLImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLImage.h; sourceTree = "<group>"; };
 		D8418C9718C968400099A530 /* OLImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLImage.m; sourceTree = "<group>"; };
 		D8418C9918C96A190099A530 /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = demo.gif; path = /Users/bradbain/dev/pasteify/Pasteify/Images/demo.gif; sourceTree = "<absolute>"; };
+		D84C3E671910804400750D94 /* CPPTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPPTipView.h; sourceTree = "<group>"; };
+		D84C3E681910804400750D94 /* CPPTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPPTipView.m; sourceTree = "<group>"; };
 		D87A5B7518F9D1DB00CAC1B5 /* MPGoogleAdMobBannerCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPGoogleAdMobBannerCustomEvent.h; sourceTree = "<group>"; };
 		D87A5B7618F9D1DB00CAC1B5 /* MPGoogleAdMobBannerCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPGoogleAdMobBannerCustomEvent.m; sourceTree = "<group>"; };
 		D87A5B7718F9D1DB00CAC1B5 /* MPGoogleAdMobInterstitialCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPGoogleAdMobInterstitialCustomEvent.h; sourceTree = "<group>"; };
@@ -537,6 +540,8 @@
 				D82DEA1518B168070080D4BD /* JBCroppableLayer.m */,
 				D82DEA1618B168070080D4BD /* ManiputableImageView.h */,
 				D82DEA1718B168070080D4BD /* ManiputableImageView.m */,
+				D84C3E671910804400750D94 /* CPPTipView.h */,
+				D84C3E681910804400750D94 /* CPPTipView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1121,6 +1126,7 @@
 				D87A5C6318F9D1DC00CAC1B5 /* MPFacebookKeywordProvider.m in Sources */,
 				D87A5C6D18F9D1DC00CAC1B5 /* MPInterstitialAdManager.m in Sources */,
 				D87A5C4C18F9D1DC00CAC1B5 /* CFilteringJSONSerializer.m in Sources */,
+				D84C3E691910804400750D94 /* CPPTipView.m in Sources */,
 				D87A5C8718F9D1DC00CAC1B5 /* MPIdentityProvider.m in Sources */,
 				D87A5C7F18F9D1DC00CAC1B5 /* MRProperty.m in Sources */,
 				D82DEA2318B168070080D4BD /* CPPStep1ViewController.m in Sources */,
